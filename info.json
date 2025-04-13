@@ -2,6 +2,7 @@
   "name": "rework-combat-bots",
   "version": "0.1.0",
   "title": "Rework Combat Bots",
+  "description": "Bring combat robotics into the space age! Each type of capsule is now unlocked on one of the inner planets, and has been tweaked to align better with its planet of origin and its name.",
   "author": "petrak@",
   "factorio_version": "2.0",
   "dependencies": [
