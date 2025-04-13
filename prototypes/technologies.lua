@@ -36,7 +36,7 @@ defender.prerequisites = {
   "pkrcb-combat-robotics",
   "metallurgic-science-pack",
 }
-defender.unit.count = 1000
+defender.unit.count = 500
 defender.unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -45,6 +45,12 @@ defender.unit.ingredients = {
   {"space-science-pack", 1},
   {"metallurgic-science-pack", 1},
 }
+for i,effect in ipairs(defender.effects) do
+  if effect.type == "maximum-following-robots-count" then
+    table.remove(defender.effects, i)
+    break
+  end
+end
 
 distractor.prerequisites = {
   "pkrcb-combat-robotics",
