@@ -19,7 +19,7 @@ These robots are even more fragile than turrets, so it's not a good idea to thro
 
 ## Distractor Capsule
 
-*Deploy a fast robot that runs away from the player and attracts enemies towards it with the smell of delicious.*
+*Deploy a fast robot that runs away from the player and attracts enemies towards it with the smell of delicious jelly.*
 
 Unlocked on Gleba after you figure out jellynuts.
 Does not do any damage, but leads enemies away from you.
