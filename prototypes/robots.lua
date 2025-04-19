@@ -8,6 +8,7 @@ local sounds = require "__base__/prototypes/entity/sounds"
 -- - Basically like turret spam without needing to micro them
 local defender = data.raw["combat-robot"]["defender"]
 defender.is_military_target = true
+defender.time_to_live = 30 * 60
 defender.speed = 0
 -- Still count against follower robot count
 defender.follows_player = true
@@ -89,7 +90,7 @@ data.raw["projectile"]["distractor-capsule"]
 -- but tesla ammo requires a LOT of infrastructure and I cba
 local destroyer = data.raw["combat-robot"]["destroyer"]
 destroyer.is_military_target = true
-destroyer.time_to_live = 30 * 60
+destroyer.time_to_live = 60 * 60
 destroyer.max_health = 500
 destroyer.attack_parameters.cooldown = 2 * 60
 destroyer.attack_parameters.ammo_type = data.raw["ammo"]["tesla-ammo"].ammo_type
@@ -97,7 +98,7 @@ destroyer.attack_parameters.ammo_type = data.raw["ammo"]["tesla-ammo"].ammo_type
 destroyer.attack_parameters.damage_modifier = 0.5
 -- for some reason this is not an array but the other two are
 data.raw["projectile"]["destroyer-capsule"]
-  .action.action_delivery.target_effects.offsets = {{0, 0}}
+  .action.action_delivery.target_effects.offsets = {{-0.5, 0}, {0.5, 0}}
 
 -- Give the player a warning before it explodes
 -- Do this by !!SECRETLY!! replacing the entity with a different one
